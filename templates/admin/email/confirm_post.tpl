@@ -1,0 +1,1 @@
+<!-- <%$smarty.template%> --><%include file='admin/admin_header.tpl' title='Admin Page'%><tr><td><%if $error %><p id="error"><%$error%><%else%><h1 align="center">SUCCESS!</h1><%/if%><h1>Your email has been posted to <%$count%> members.</h1></td></tr><%include file='admin/admin_footer.tpl'%>

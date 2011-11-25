@@ -1,0 +1,1 @@
+<%include file="header.tpl" title="Crazy Legs Conti"%><!-- <%$smarty.template%> --><tr><td><p class="error" align="center"><%$error%></p></td></tr><%include file="footer.tpl"%>

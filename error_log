@@ -1,0 +1,49 @@
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/crazyl3/public_html/includes/functions.php on line 10
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/events.php on line 4
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/events.php on line 4
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/events.php on line 7
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/events.php on line 7
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/events.php on line 10
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/events.php on line 26
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/standard.php on line 10
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/standard.php on line 10
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/standard.php on line 11
+[11-Oct-2004 15:49:36] PHP Warning:  getimagesize(/Users/Dinshaw/Sites/CrazyLegs/userImages/home/): failed to open stream: No such file or directory in /home/crazyl3/public_html/scripts/standard.php on line 28
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/standard_archive.php on line 4
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/standard_archive.php on line 4
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/standard_archive.php on line 5
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/standard_archive.php on line 10
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/standard_archive.php on line 10
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/standard_archive.php on line 12
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/popup.php on line 5
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/popup.php on line 5
+[11-Oct-2004 15:49:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/popup.php on line 6
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/crazyl3/public_html/includes/functions.php on line 10
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/events.php on line 4
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/events.php on line 4
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/events.php on line 7
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/events.php on line 7
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/events.php on line 10
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/events.php on line 26
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/standard.php on line 10
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/standard.php on line 10
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/standard.php on line 11
+[11-Oct-2004 15:50:20] PHP Warning:  getimagesize(/Users/Dinshaw/Sites/CrazyLegs/userImages/home/): failed to open stream: No such file or directory in /home/crazyl3/public_html/scripts/standard.php on line 28
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/standard_archive.php on line 4
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/standard_archive.php on line 4
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/standard_archive.php on line 5
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/standard_archive.php on line 10
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/standard_archive.php on line 10
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/standard_archive.php on line 12
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/scripts/popup.php on line 5
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/scripts/popup.php on line 5
+[11-Oct-2004 15:50:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/popup.php on line 6
+[11-Oct-2004 16:15:04] PHP Warning:  getimagesize(/Users/Dinshaw/Sites/CrazyLegs/userImages/home/): failed to open stream: No such file or directory in /home/crazyl3/public_html/scripts/standard.php on line 28
+[11-Oct-2004 16:15:16] PHP Warning:  main(../libs/smarty.class.php): failed to open stream: No such file or directory in /home/crazyl3/public_html/admin.php on line 4
+[11-Oct-2004 16:15:16] PHP Fatal error:  main(): Failed opening required '../libs/smarty.class.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/crazyl3/public_html/admin.php on line 4
+[11-Oct-2004 16:16:13] PHP Warning:  getimagesize(/Users/Dinshaw/Sites/CrazyLegs/userImages/press/): failed to open stream: No such file or directory in /home/crazyl3/public_html/scripts/standard.php on line 28
+[11-Oct-2004 16:20:36] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/admin/adminLogin.php on line 64
+[11-Oct-2004 16:20:55] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/crazyl3/public_html/scripts/admin/adminLogin.php on line 64
+[11-Oct-2004 16:25:09] PHP Warning:  move_uploaded_file(/Users/Dinshaw/Sites/CrazyLegs/userImages//home/1-home.jpg): failed to open stream: No such file or directory in /home/crazyl3/public_html/includes/functions.php on line 19
+[11-Oct-2004 16:25:09] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpJnXUuf' to '/Users/Dinshaw/Sites/CrazyLegs/userImages//home/1-home.jpg' in /home/crazyl3/public_html/includes/functions.php on line 19
+[11-Oct-2004 16:25:09] PHP Warning:  getimagesize(/Users/Dinshaw/Sites/CrazyLegs/userImages/home/1-home.jpg): failed to open stream: No such file or directory in /home/crazyl3/public_html/scripts/admin/image_upload.php on line 34

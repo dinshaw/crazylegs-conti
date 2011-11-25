@@ -1,0 +1,130 @@
+body {
+	color: #FFF;
+	background:#093;
+	margin:0;
+	padding:0;
+}
+
+img{
+border:0;
+}
+
+img#home{
+margin:0  20px 25px 20px;
+border:1px solid #fff;
+}
+
+img#popup{
+margin:10px;
+border:1px solid #fff;
+}
+
+img#sidebar{
+display:block;
+}	
+
+p, td, li, ul, ol, h1, h2, h3, h4, h5 {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:none;
+	color: #000033;
+}
+a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:none;
+	color: #000033;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:underline;
+	color: #000033;
+}
+a:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:none;
+	color: #000033;
+}
+
+#nav{
+margin:20px 0;
+text-align:center;
+font-size: 12px;
+}
+
+#content{
+font-size:12px;
+margin:0 0 20px 20px;
+}
+
+#title, #titleB{
+font-size:12px;
+font-weight:bold;
+margin:0 0 15px 20px;
+}
+
+
+#titleB{
+color:#006;
+font-weight:normal;
+margin:0;
+}
+
+#bold{
+font-size:12px;
+font-weight:bold;
+}
+
+#xsmall {
+	margin:0;
+	font-size: 9px;
+}
+
+#footer{
+margin:25px 0 0 0;
+text-align:center;
+}
+
+h4{
+font-size: 9px;
+font-weight:normal;
+margin:0;
+}	
+
+#events{
+display:block;
+width:828px;
+border:1px solid #fff;
+text-align:left;
+margin:0 0 20px 0;
+padding:3px;
+font-size:12px;
+text-align:center;
+}
+
+#eventsPopup{
+display:block;
+width:200px;
+border:1px solid #fff;
+text-align:left;
+padding:3px;
+font-size:12px;
+text-align:center;
+}
+
+div#emailForm, div#emailForm td, div#emailForm td input, div#emailForm td a{
+font-size:10px;
+}
+div#emailForm{
+width:510px;
+}
+
+.error{
+color:#990000;
+}

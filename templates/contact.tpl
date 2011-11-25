@@ -1,0 +1,1 @@
+<%include file="header.tpl"%>	<tr>		<td width="300" valign="top" align="right">	<img src="userImages/<%$mode%>/<%$image%>" width="<%$width%>">		</td>		<td valign="top"><p id="title"><%$title%></p><p id="content"><%$body|nl2br%></p>		</td>	</tr><%include file="footer.tpl"%>

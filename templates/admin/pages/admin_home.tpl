@@ -1,0 +1,1 @@
+<%include file='admin/admin_header.tpl' title='Admin Page'%></table><div align="center"><p>You have successfully logged in.</p><p>Here you can edit all the content of this site.</p><p>Please choose from the options iin the main nav bar above.</p></div><table><%include file='admin/admin_footer.tpl'%>

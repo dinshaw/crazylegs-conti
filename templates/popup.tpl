@@ -1,0 +1,1 @@
+<%include file="popup_header.tpl"%><p id="bold"><%$popupTitle%></p><div id="eventsPopup"><p><%$popupBody|nl2br%></p></div><%include file="popup_footer.tpl"%>

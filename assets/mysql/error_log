@@ -1,0 +1,15 @@
+[11-Oct-2004 15:51:12] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/crazyl3/public_html/includes/functions.php on line 10
+[11-Oct-2004 15:51:12] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:51:12] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:56:16] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/crazyl3/public_html/includes/functions.php on line 10
+[11-Oct-2004 15:56:16] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:56:16] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:56:39] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/crazyl3/public_html/includes/functions.php on line 10
+[11-Oct-2004 15:56:39] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:56:39] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:56:44] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/crazyl3/public_html/includes/functions.php on line 10
+[11-Oct-2004 15:56:44] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:56:44] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:57:00] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/crazyl3/public_html/includes/functions.php on line 10
+[11-Oct-2004 15:57:00] PHP Warning:  mysql_query(): Access denied for user: 'crazyl3@localhost' (Using password: NO) in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
+[11-Oct-2004 15:57:00] PHP Warning:  mysql_query(): A link to the server could not be established in /home/crazyl3/public_html/assets/mysql/create_tables.php on line 24
