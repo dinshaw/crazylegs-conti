@@ -4,7 +4,7 @@
 if($_REQUEST['action'] == "search"){
 	if($email = $_REQUEST['email']){
 		$searchSql .= "where email like '%$email%'";
-		$tpl->assign('email', $email);		
+		$tpl->assign('email', $email);
 	}
 	if($username = $_REQUEST['username']){
 		if($searchSql){
@@ -22,7 +22,7 @@ if($_REQUEST['action'] == "search"){
 			$searchSql = "where ";
 		}
 		$searchSql .= "id = '$id'";
-		$tpl->assign('id', $id);	
+		$tpl->assign('id', $id);
 	}
 	if($status = $_REQUEST['status']){
 		if($searchSql){
@@ -49,26 +49,26 @@ if($_REQUEST['action'] == "search"){
 include "scripts/paging.php";
 
 $sql = "select * from users $searchSql order by id asc LIMIT $start, $limit ";
-$query = mysql_query($sql);
+$query = mysqli_query($sql);
 
-while($rows = mysql_fetch_array($query))
+while($rows = mysqli_fetch_array($query))
 {
 	$users = array();
-	
+
 	$users['id'] = $rows['id'];
 	$users['username'] = $rows['username'];
 	$users['email'] = $rows['email'];
 	$users['status'] = $rows['status'];
 	$users['email_list'] = $rows['email_list'];
 	$users['dateTime'] = $rows['dateTime'];
-	
+
 	$usersList[] = $users;
 }
 
 //how many userson the email list?
 $emailCountSql = "select count(*) from users where email_list = '1'";
-$emailCountResult = mysql_query($emailCountSql);
-$emailCountRow = mysql_fetch_array($emailCountResult, MYSQL_ASSOC);
+$emailCountResult = mysqli_query($emailCountSql);
+$emailCountRow = mysqli_fetch_array($emailCountResult, MYSQL_ASSOC);
 $emailCount = $emailCountRow["count(*)"];
 
 //assign loop and other stuff

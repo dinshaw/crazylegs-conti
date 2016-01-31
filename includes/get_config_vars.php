@@ -1,8 +1,8 @@
 <?php
 $sql = "select * from config";
-$query = mysql_query($sql);
+$query = mysqli_query($mysqli, $sql);
 
-while($rows = mysql_fetch_array($query)){
+while($rows = mysqli_fetch_array($query)){
 	$cfgVar = array();
 	$cfg_name = $rows['name'];
 	$cfgVar[$cfg_name] = $rows['value'];

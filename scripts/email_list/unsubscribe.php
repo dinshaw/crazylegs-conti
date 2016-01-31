@@ -4,26 +4,26 @@ if($_REQUEST['action'] == "unsubscribe"){
 	if($_REQUEST['id']){
 		$id = $_REQUEST['id'];
 		$sql ="select * from users where id = '$id'";
-		$query = mysql_query($sql);
-		$rows = mysql_fetch_array($query);
+		$query = mysqli_query($sql);
+		$rows = mysqli_fetch_array($query);
 		$removeEmail = $rows['email'];
 		$sql = "delete from users where id = '$id'";
 		$msg = "The email $removeEmail has been removed from the database.";
-		$query = mysql_query($sql);
+		$query = mysqli_query($sql);
 		$tpl->assign('error',$msg);
 		$tpl->assign('removeEmail',$removeEmail);
 		$tpl->display('email_list/unsubscribe_confirm.tpl');
 	}elseif($_REQUEST['removeEmail']){
 		$removeEmail = $_REQUEST['removeEmail'];
 		$sql ="select * from users where email = '$removeEmail'";
-		$query = mysql_query($sql);
-		$rows = mysql_fetch_array($query);
+		$query = mysqli_query($sql);
+		$rows = mysqli_fetch_array($query);
 		$num = mysql_num_rows($query);
 		if($num>=1){
 			$id = $rows['id'];
 			$sql = "delete from users where id = '$id'";
 			$msg = "The email $removeEmail has been removed from the database.";
-			$query = mysql_query($sql);
+			$query = mysqli_query($sql);
 			$tpl->assign('error',$msg);
 			$tpl->assign('removeEmail',$removeEmail);
 			$tpl->display('email_list/unsubscribe_confirm.tpl');

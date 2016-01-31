@@ -13,7 +13,7 @@ $tpl->debugging = false;
 $tpl->left_delimiter = "<%";
 $tpl->right_delimiter = "%>";
 
-db_connect();
+$mysqli = db_connect();
 include 'includes/get_config_vars.php';
 
 //assign email for contact
@@ -21,7 +21,7 @@ $tpl->assign('contactEmail', __CFG_ContactEmail);
 $tpl->assign('homePage', __CFG_HomePage);
 $tpl->assign('homePageUrl', __CFG_HomePageUrl);
 
-foreach ($_REQUEST as $var => $value) 
+foreach ($_REQUEST as $var => $value)
 	{
 	${$var} = $value;
 	$tpl->assign( $var,$value );

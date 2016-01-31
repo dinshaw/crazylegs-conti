@@ -1,4 +1,4 @@
-<?
+<?php
 require '../../includes/functions.php';
 
 db_connect();
@@ -12,7 +12,7 @@ if($_POST['errorCheck'] =="on"){
 	'validEmail' => "That does not appear to be a valid email address.\n",
 	'emailDouble' => "That email address is already in our database.\n"
 	);
-		
+
 	if (!$_POST['email'])
 	{
 		$error .= $errors['email'];
@@ -24,35 +24,35 @@ if($_POST['errorCheck'] =="on"){
 		{
 			$error .= $errors['validEmail'];
 		}
-	
+
 		$email = $_POST['email'];
 		$name = $_POST['name'];
-		
+
 		$sql = "select * from users where email = '$email'";
-		$result = mysql_query($sql);
-		$rows = mysql_fetch_array($result);		
+		$result = mysqli_query($sql);
+		$rows = mysqli_fetch_array($result);
 		$listStatus = $rows['email_list'];
 		$id = $rows['id'];
-		
+
 		if (mysql_num_rows($result)>0)
 		{
 			//are they already getting the email? If so, show the found double msg
-			if($listStatus == '1'){		
+			if($listStatus == '1'){
 				unset($email);
 				$error .= $errors['emailDouble'];
 			}
 		}
 	}
-	
+
 	if (!$error)
 	{
 		$sql = "insert into users (username, email, status, email_list, dateTime) values ('$name', '$email','0','1',NOW())";
-		$result = mysql_query($sql) or die(mysql_error());
-		
+		$result = mysqli_query($sql) or die(mysql_error());
+
 		$id = mysql_insert_id();
-		
+
 		$text = "Hello $name,
-		Thanks for signing up for the CrazyLegsConti.com email list.  We will update you about all the important eating events, Crazy Legs oriented stuff, and some parties too! 
+		Thanks for signing up for the CrazyLegsConti.com email list.  We will update you about all the important eating events, Crazy Legs oriented stuff, and some parties too!
 		If you got this by mistake there are instructions at the bottom to get off.
 		Eat all you can...
 		-CLC
@@ -63,10 +63,10 @@ if($_POST['errorCheck'] =="on"){
 		-CLC
 		<br />
 		<a href='".__CFG_HomePage."'>CrazyLegsConti.com</a><br />";
-		
+
 		$msg = "Thank you, your email address has been added to the list.";
 		mail_multi_alt($email,"==1234wahsnid4321","Welcome to Crazy  Legs' list",$text,$html,$id);
-		
+
 		unset($name);
 		unset($email);
 	}
@@ -85,7 +85,7 @@ if($_POST['errorCheck'] =="on"){
 
 <div id="emailForm">
 
-<p class="error" align="center"><? echo $msg; echo $error;?></p>
+<p class="error" align="center"><?php echo $msg; echo $error;?></p>
 
 	<form action="email_iframe.php" method="post">
 	<input type="hidden" name="mode" value="emailIframe">
@@ -96,20 +96,20 @@ if($_POST['errorCheck'] =="on"){
 	 <tr>
 		<td colspan="5" align="center">Join the email list!:</td>
 	</tr>
-	
+
 	<tr>
 		<td class="lbl">Name:</td>
-		<td class="fld"><input name="name" type="text" value="<? echo $name ?>" id="email"></td>
+		<td class="fld"><input name="name" type="text" value="<?php echo $name ?>" id="email"></td>
 		<td class="lbl">Email:</td>
-		<td class="fld"><input name="email" type="text" value="<? echo $email ?>" id="email"></td>
+		<td class="fld"><input name="email" type="text" value="<?php echo $email ?>" id="email"></td>
 		<td class="btn"><input name="submit" type="submit" value="Join Now" id="email"></td>
 	 </tr>
 	 <tr>
-	 	<td colspan="5">This email list will send information about Crazy Legs and his appearances and events. You can <a href="<? echo $homePageUrl?>/index.php?mode=email&action=unsubscribe" target="_top">remove yourself</a> from our list at any time and we will never share or sell your information (<a href="#" onClick="window.open('<? echo $hamePageUrl ?>/index.php?mode=pp','<%$homePage%>&nbsp;Privacy&nbsp;Policy','width=550,height=600,scrollbars=yes,resizable=yes')">read our privacy policy</a>).</td>
+	 	<td colspan="5">This email list will send information about Crazy Legs and his appearances and events. You can <a href="<?php echo $homePageUrl?>/index.php?mode=email&action=unsubscribe" target="_top">remove yourself</a> from our list at any time and we will never share or sell your information (<a href="#" onClick="window.open('<?php echo $hamePageUrl ?>/index.php?mode=pp','<%$homePage%>&nbsp;Privacy&nbsp;Policy','width=550,height=600,scrollbars=yes,resizable=yes')">read our privacy policy</a>).</td>
 	</tr>
 	</table>
-	
-	
+
+
 	</form>
 		</div>
 	</div>

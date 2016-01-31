@@ -1,21 +1,21 @@
-<?
+<?php
 
 
 $sql = "select * from $mode where status = 'active' order by id desc";
-$result = mysql_query($sql);
+$result = mysqli_query($sql);
 
-while ($row = mysql_fetch_array($result))
+while ($row = mysqli_fetch_array($result))
 {
 	$standardList = array();
-	
+
 	$standardList['title'] = $row['title'];
 	$standardList['body'] = $row['body'];
 	$standardList['id'] = $row['id'];
-	
+
 	$date = $row['date'];
 	$date=date("M j, Y",$date);
 	$standardList['date'] = $date;
-	
+
 	$standardList['image'] = $row['image'];
 	$image = $row['image'];
 	if ($image)
@@ -26,9 +26,9 @@ while ($row = mysql_fetch_array($result))
 			$standardList['size'] = 300;
 		}
 	}
-	
+
 	$standardLoop[] = $standardList;
 	$tpl->assign('standardLoop',$standardLoop);
 }
-  
+
 ?>

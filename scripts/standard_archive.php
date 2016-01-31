@@ -1,15 +1,15 @@
 <?
 
 $count = "select count(*) from $mode";
-$countResult = mysql_query($count);
-$countRow = mysql_fetch_array($countResult, MYSQL_ASSOC);
+$countResult = mysqli_query($count);
+$countRow = mysqli_fetch_array($countResult, MYSQL_ASSOC);
 $count = $countRow["count(*)"];
 $count--;
 
 $sql = "select * from $mode order by id asc limit $count";
-$result = mysql_query($sql);
+$result = mysqli_query($sql);
 
-while ($row = mysql_fetch_array($result)){
+while ($row = mysqli_fetch_array($result)){
 $archiveList = array();
 
 $date = $row['date'];
@@ -26,5 +26,5 @@ $archives[] = $archiveList;
 
 $tpl->assign('archives',$archives);
 
-			
+
 ?>

@@ -14,28 +14,28 @@ $errors = array(
 
 if ($_POST['errorCheckVar'] == "on"){
 
-	// check errors	
+	// check errors
 	if (!$_POST['title']){
 		$error.= $errors['title'];
 		}
-		
+
 	if ($_POST['hour'] == 'hour' || $_POST['minute'] == 'minute'){
 		$error.= $errors['when'];
 		}
-		
+
 	if ($_POST['day'] == "day"){
 		$error.= $errors['day'];
 		}
-	
+
 	if ($_POST['month'] == "month"){
 		$error.= $errors['month'];
 		}
 	if ($_POST['year'] == "year"){
 		$error.= $errors['year'];
 		}
-	
+
 	if ($error){
-		
+
 		$tpl->assign('error',$error);
 		$tpl->assign('title',$title);
 		$tpl->assign('where',$where);
@@ -44,11 +44,11 @@ if ($_POST['errorCheckVar'] == "on"){
 		$tpl->assign('day',$day);
 		$tpl->assign('hour',$hour);
 		$tpl->assign('min',$min);
-		
+
 		$tpl->display('admin/pages/events.tpl');
 		exit;
 		// end check errors
-		
+
 	}
 	else
 	{
@@ -56,10 +56,10 @@ if ($_POST['errorCheckVar'] == "on"){
 		$title = addslashes($title);
 		$location = addslashes($location);
 		$what = addslashes($what);
-		
+
 		// make timestamp
 		$date = mktime($hour, $min, 00, $month, $day, $year);
-		
+
 		//decide weather to update ir insert
 		if ($_POST['action'] == "add")
 		{
@@ -68,15 +68,15 @@ if ($_POST['errorCheckVar'] == "on"){
 		elseif ($_POST['action'] == "edit")
 		{
 		//edit event
-		
+
 		}
 		elseif ($_POST['action'] == "delete")
 		{
 		$sql = "delete from events where id = '$id'";
 		}
-		
-	mysql_query($sql)or die("<b>A fatal MySQL error occured</b>.\n<br />Query: " . $sql . "<br />\nError: (" . mysql_errno() . ") " . mysql_error());
-		
+
+	mysqli_query($sql)or die("<b>A fatal MySQL error occured</b>.\n<br />Query: " . $sql . "<br />\nError: (" . mysql_errno() . ") " . mysql_error());
+
 	include 'scripts/admin/getAll.php';
 	$tpl->display('admin/add_or_edit.tpl');
 	exit;

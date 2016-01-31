@@ -1,21 +1,25 @@
-<?
+<?php
 
 require '../../includes/functions.php';
 
-//db_connect();
- $dbh=mysql_connect ("localhost", "crazyl3_crazyleg", "colemans") or die ('I cannot connect to the database because: ' . mysql_error());
- mysql_select_db ("crazyl3_crazyLegs");
- 
- 
+$mysqli = new mysqli("localhost", "root", "", "crazyl3_crazylegs");
+
+if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: " . $mysqli->connect_error;
+} else {
+  echo 'connected';
+}
+
+
 $sql = "create table adminLogin (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 username VARCHAR(255),
 passwd VARCHAR(255),
 email VARCHAR(255))
 ";
 
+$res = $mysqli->query($sql);
 
 
-/*
 $sql = "create table contact (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
 date INT(11),
@@ -23,7 +27,7 @@ body BLOB,
 image VARCHAR(255))
 ";
 
-
+$res = $mysqli->query($sql);
 
 $sql = "create table home (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
@@ -32,6 +36,7 @@ body BLOB,
 image VARCHAR(255))
 ";
 
+$res = $mysqli->query($sql);
 
 $sql = "create table fests (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
@@ -39,7 +44,7 @@ date INT(11),
 body BLOB,
 image VARCHAR(255))
 ";
-
+$res = $mysqli->query($sql);
 
 $sql = "create table press (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
@@ -48,7 +53,7 @@ body BLOB,
 image VARCHAR(255))
 ";
 
-
+$res = $mysqli->query($sql);
 $sql = "create table plate (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
 date INT(11),
@@ -56,30 +61,26 @@ body BLOB,
 image VARCHAR(255))
 ";
 
-
+$res = $mysqli->query($sql);
 
 $sql = "create table movie (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
 date INT(11),
 body BLOB,
-image VARCHAR(255))
-";
-
+image VARCHAR(255)) ";
+$res = $mysqli->query($sql);
 
 $sql = "create table events (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
 dateTime INT(11),
 what VARCHAR(255),
-location VARCHAR(255))
-
+location VARCHAR(255))";
+$res = $mysqli->query($sql);
 
 $sql = "create table popup (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
 title VARCHAR(255),
 body VARCHAR(255),
-status VARCHAR(255))
-";
-*/
-mysql_query($sql)or die("Create table Error: ".mysql_error());
+status VARCHAR(255))";
+$res = $mysqli->query($sql);
 
-
-?>
+ ?>

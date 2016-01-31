@@ -8,10 +8,10 @@ $prev = $curr - $limit;
 
 //decide which table to count
 include'scripts/paging_sqls.php';
-$result = mysql_query( $sql ) or die("<b>A fatal MySQL error occured</b>.\n<br />Query: " . $sql . "<br />\nError: (" . mysql_errno() . ") " . mysql_error());
+$result = mysqli_query( $sql ) or die("<b>A fatal MySQL error occured</b>.\n<br />Query: " . $sql . "<br />\nError: (" . mysql_errno() . ") " . mysql_error());
 
 //run count query
-$row = mysql_fetch_array($result, MYSQL_ASSOC);
+$row = mysqli_fetch_array($result, MYSQL_ASSOC);
 $count = $row["count(*)"];
 $fullCount = $count;
 //echo "count $count <br>";
@@ -29,7 +29,7 @@ if( $count > $pageamount ){
 		$pages[] = $page;
 		if( $count - $pageamount < 0 ){
 			$continue = 0;
-	
+
 		} else{
 			$count = $count - $pageamount;
 		}
@@ -51,7 +51,7 @@ sectopn loop
 <%if $pages %><a href="#">&#8250;</a><a href="#">&#8249;</a>  <%/if%>
 
 section loop with serch, back & forward, and full count
-<p><%$fullCount%> users in database<%if $search %> match your search criteria<%/if%>.</p> 
+<p><%$fullCount%> users in database<%if $search %> match your search criteria<%/if%>.</p>
 <div id="pager"><%if $pages %>Page:  <a href="admin.php?mode=users&start=<%$prev%><%if $search %>&action=search<%/if%><%if $email %>&email=<%$email%><%/if%><%if $username %>&username=<%$username%><%/if%><%if $status %>&status=<%$status%><%/if%><%if $emailList %>&emailList=<%$emailList%><%/if%>">&#8249;</a><%/if%><%section name=pageLoop loop=$pages%>
 <%if $pages[pageLoop].start eq "$curr"%><span class="currPage"><%/if%><a href="admin.php?mode=users&start=<%$pages[pageLoop].start%>">
 <%$pages[pageLoop].pagenumber%></a><%if $curr eq $pages[pageLoop].start%></span><%/if%>

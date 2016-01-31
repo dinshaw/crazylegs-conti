@@ -6,11 +6,11 @@ define('__CFG_HOSTNAME','localhost');
 define('__CFG_DATABASE','crazyl3_crazyLegs');
 
 //MySQL User Name
-//define('__CFG_USERNAME','root');
+// define('__CFG_USERNAME','root');
 define('__CFG_USERNAME','crazyl3_crazyleg');
 
 //MySQL Password
-//define('__CFG_PASSWORD','');
+// define('__CFG_PASSWORD','');
 define('__CFG_PASSWORD','colemans');
 
 
